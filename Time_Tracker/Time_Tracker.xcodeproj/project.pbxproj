@@ -16,7 +16,7 @@
 		3A528F5A217F1B2B00394AF4 /* Time_TrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A528F59217F1B2B00394AF4 /* Time_TrackerUITests.swift */; };
 		3AD7B1832180626300AC1206 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AD7B1822180626300AC1206 /* Launch Screen.storyboard */; };
 		89AE5246BF16468BF91CD59C /* Pods_Time_Tracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA4723E03C1EF11B049DFD59 /* Pods_Time_Tracker.framework */; };
-		C864AA61D447CD059C17978C /* Pods_Time_TrackerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 238B081864E302320B29CA8F /* Pods_Time_TrackerTests.framework */; };
+		C864AA61D447CD059C17978C /* Pods_Time_TrackerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 238B081864E302320B29CA8F /* Pods_Time_TrackerTests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -195,7 +195,6 @@
 				3A528F46217F1B2B00394AF4 /* Sources */,
 				3A528F47217F1B2B00394AF4 /* Frameworks */,
 				3A528F48217F1B2B00394AF4 /* Resources */,
-				91F4E3960FC3BD25C46F1BE7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -327,31 +326,11 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Time_Tracker-Time_TrackerTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Time_TrackerTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		91F4E3960FC3BD25C46F1BE7 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Time_Tracker-Time_TrackerTests/Pods-Time_Tracker-Time_TrackerTests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
-				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Time_Tracker-Time_TrackerTests/Pods-Time_Tracker-Time_TrackerTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C2A0B8FEE2EE345AD070590C /* [CP] Check Pods Manifest.lock */ = {
@@ -550,7 +529,7 @@
 				DEVELOPMENT_TEAM = MU57FQ42EU;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Time_Tracker/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -570,7 +549,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MU57FQ42EU;
 				INFOPLIST_FILE = Time_Tracker/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -584,7 +563,7 @@
 		};
 		3A528F62217F1B2B00394AF4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 073FE85FCF98A9C3D0E49D33 /* Pods-Time_Tracker-Time_TrackerTests.debug.xcconfig */;
+			baseConfigurationReference = 61AC5643F7CE16457AE26D7C /* Pods-Time_TrackerTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -606,7 +585,7 @@
 		};
 		3A528F63217F1B2B00394AF4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9569238DA7B355D04E7554E2 /* Pods-Time_Tracker-Time_TrackerTests.release.xcconfig */;
+			baseConfigurationReference = 06E176A3452D3477CF29A1DD /* Pods-Time_TrackerTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

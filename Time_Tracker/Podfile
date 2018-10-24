@@ -5,6 +5,7 @@ target 'Time_Tracker' do
         pod 'RealmSwift'
 
         target 'Time_TrackerTests' do
+			inherit! :search_paths
         end
 end
 
