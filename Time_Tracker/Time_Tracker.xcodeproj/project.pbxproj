@@ -7,15 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3977F5F90A14B720FE8EDC42 /* Pods_Time_Tracker_Time_TrackerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96189132292699F646588E55 /* Pods_Time_Tracker_Time_TrackerTests.framework */; };
 		3A528F3A217F1B2900394AF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A528F39217F1B2900394AF4 /* AppDelegate.swift */; };
 		3A528F3C217F1B2900394AF4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A528F3B217F1B2900394AF4 /* ViewController.swift */; };
 		3A528F3F217F1B2A00394AF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A528F3D217F1B2A00394AF4 /* Main.storyboard */; };
 		3A528F41217F1B2B00394AF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A528F40217F1B2B00394AF4 /* Assets.xcassets */; };
-		3A528F44217F1B2B00394AF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A528F42217F1B2B00394AF4 /* LaunchScreen.storyboard */; };
 		3A528F4F217F1B2B00394AF4 /* Time_TrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A528F4E217F1B2B00394AF4 /* Time_TrackerTests.swift */; };
 		3A528F5A217F1B2B00394AF4 /* Time_TrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A528F59217F1B2B00394AF4 /* Time_TrackerUITests.swift */; };
-		B990A7EBB40893E0969A3E7C /* Pods_Time_TrackerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9CD4B9112B766EECCB29B35 /* Pods_Time_TrackerTests.framework */; };
-		C188C02C045B46F7CFD235BE /* Pods_Time_Tracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52545B7CD4846FFAB76EAB6E /* Pods_Time_Tracker.framework */; };
+		3AD7B1832180626300AC1206 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AD7B1822180626300AC1206 /* Launch Screen.storyboard */; };
+		89AE5246BF16468BF91CD59C /* Pods_Time_Tracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA4723E03C1EF11B049DFD59 /* Pods_Time_Tracker.framework */; };
+		C864AA61D447CD059C17978C /* Pods_Time_TrackerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 238B081864E302320B29CA8F /* Pods_Time_TrackerTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,15 +37,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		092D9A0086818E004743FCEE /* Pods-Time_TrackerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Time_TrackerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Time_TrackerTests/Pods-Time_TrackerTests.release.xcconfig"; sourceTree = "<group>"; };
-		0D17C4B2D3AC3E7DCCF0B6C1 /* Pods-Time_Tracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Time_Tracker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Time_Tracker/Pods-Time_Tracker.debug.xcconfig"; sourceTree = "<group>"; };
-		1541E5AA0804AF43E6B032DC /* Pods-Time_TrackerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Time_TrackerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Time_TrackerTests/Pods-Time_TrackerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		06E176A3452D3477CF29A1DD /* Pods-Time_TrackerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Time_TrackerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Time_TrackerTests/Pods-Time_TrackerTests.release.xcconfig"; sourceTree = "<group>"; };
+		073FE85FCF98A9C3D0E49D33 /* Pods-Time_Tracker-Time_TrackerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Time_Tracker-Time_TrackerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Time_Tracker-Time_TrackerTests/Pods-Time_Tracker-Time_TrackerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		238B081864E302320B29CA8F /* Pods_Time_TrackerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Time_TrackerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		30A85A249C8F910233E68AF8 /* Pods-Time_Tracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Time_Tracker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Time_Tracker/Pods-Time_Tracker.debug.xcconfig"; sourceTree = "<group>"; };
 		3A528F36217F1B2900394AF4 /* Time_Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Time_Tracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A528F39217F1B2900394AF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A528F3B217F1B2900394AF4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3A528F3E217F1B2A00394AF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3A528F40217F1B2B00394AF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3A528F43217F1B2B00394AF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A528F45217F1B2B00394AF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A528F4A217F1B2B00394AF4 /* Time_TrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Time_TrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A528F4E217F1B2B00394AF4 /* Time_TrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Time_TrackerTests.swift; sourceTree = "<group>"; };
@@ -52,9 +53,12 @@
 		3A528F55217F1B2B00394AF4 /* Time_TrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Time_TrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A528F59217F1B2B00394AF4 /* Time_TrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Time_TrackerUITests.swift; sourceTree = "<group>"; };
 		3A528F5B217F1B2B00394AF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4D091B996E5B3722F06B8C48 /* Pods-Time_Tracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Time_Tracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-Time_Tracker/Pods-Time_Tracker.release.xcconfig"; sourceTree = "<group>"; };
-		52545B7CD4846FFAB76EAB6E /* Pods_Time_Tracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Time_Tracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E9CD4B9112B766EECCB29B35 /* Pods_Time_TrackerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Time_TrackerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AD7B1822180626300AC1206 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		61AC5643F7CE16457AE26D7C /* Pods-Time_TrackerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Time_TrackerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Time_TrackerTests/Pods-Time_TrackerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9124FC719672F95AD8D7C7B7 /* Pods-Time_Tracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Time_Tracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-Time_Tracker/Pods-Time_Tracker.release.xcconfig"; sourceTree = "<group>"; };
+		9569238DA7B355D04E7554E2 /* Pods-Time_Tracker-Time_TrackerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Time_Tracker-Time_TrackerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Time_Tracker-Time_TrackerTests/Pods-Time_Tracker-Time_TrackerTests.release.xcconfig"; sourceTree = "<group>"; };
+		96189132292699F646588E55 /* Pods_Time_Tracker_Time_TrackerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Time_Tracker_Time_TrackerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA4723E03C1EF11B049DFD59 /* Pods_Time_Tracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Time_Tracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C188C02C045B46F7CFD235BE /* Pods_Time_Tracker.framework in Frameworks */,
+				89AE5246BF16468BF91CD59C /* Pods_Time_Tracker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,7 +74,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B990A7EBB40893E0969A3E7C /* Pods_Time_TrackerTests.framework in Frameworks */,
+				C864AA61D447CD059C17978C /* Pods_Time_TrackerTests.framework in Frameworks */,
+				3977F5F90A14B720FE8EDC42 /* Pods_Time_Tracker_Time_TrackerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +89,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		12910E77FFBA84F630F9ADC0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				30A85A249C8F910233E68AF8 /* Pods-Time_Tracker.debug.xcconfig */,
+				9124FC719672F95AD8D7C7B7 /* Pods-Time_Tracker.release.xcconfig */,
+				61AC5643F7CE16457AE26D7C /* Pods-Time_TrackerTests.debug.xcconfig */,
+				06E176A3452D3477CF29A1DD /* Pods-Time_TrackerTests.release.xcconfig */,
+				073FE85FCF98A9C3D0E49D33 /* Pods-Time_Tracker-Time_TrackerTests.debug.xcconfig */,
+				9569238DA7B355D04E7554E2 /* Pods-Time_Tracker-Time_TrackerTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		38E8F2BDAE04B6D758BF210B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA4723E03C1EF11B049DFD59 /* Pods_Time_Tracker.framework */,
+				238B081864E302320B29CA8F /* Pods_Time_TrackerTests.framework */,
+				96189132292699F646588E55 /* Pods_Time_Tracker_Time_TrackerTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3A528F2D217F1B2900394AF4 = {
 			isa = PBXGroup;
 			children = (
@@ -91,8 +119,8 @@
 				3A528F4D217F1B2B00394AF4 /* Time_TrackerTests */,
 				3A528F58217F1B2B00394AF4 /* Time_TrackerUITests */,
 				3A528F37217F1B2900394AF4 /* Products */,
-				EC779D3EC5CE147983A54C35 /* Pods */,
-				D4FDF2D21D21918E9C0010BA /* Frameworks */,
+				12910E77FFBA84F630F9ADC0 /* Pods */,
+				38E8F2BDAE04B6D758BF210B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -113,8 +141,8 @@
 				3A528F3B217F1B2900394AF4 /* ViewController.swift */,
 				3A528F3D217F1B2A00394AF4 /* Main.storyboard */,
 				3A528F40217F1B2B00394AF4 /* Assets.xcassets */,
-				3A528F42217F1B2B00394AF4 /* LaunchScreen.storyboard */,
 				3A528F45217F1B2B00394AF4 /* Info.plist */,
+				3AD7B1822180626300AC1206 /* Launch Screen.storyboard */,
 			);
 			path = Time_Tracker;
 			sourceTree = "<group>";
@@ -137,26 +165,6 @@
 			path = Time_TrackerUITests;
 			sourceTree = "<group>";
 		};
-		D4FDF2D21D21918E9C0010BA /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				52545B7CD4846FFAB76EAB6E /* Pods_Time_Tracker.framework */,
-				E9CD4B9112B766EECCB29B35 /* Pods_Time_TrackerTests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		EC779D3EC5CE147983A54C35 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				0D17C4B2D3AC3E7DCCF0B6C1 /* Pods-Time_Tracker.debug.xcconfig */,
-				4D091B996E5B3722F06B8C48 /* Pods-Time_Tracker.release.xcconfig */,
-				1541E5AA0804AF43E6B032DC /* Pods-Time_TrackerTests.debug.xcconfig */,
-				092D9A0086818E004743FCEE /* Pods-Time_TrackerTests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -164,11 +172,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3A528F5E217F1B2B00394AF4 /* Build configuration list for PBXNativeTarget "Time_Tracker" */;
 			buildPhases = (
-				B75172E26FAA5D8C8D299AE8 /* [CP] Check Pods Manifest.lock */,
+				C2A0B8FEE2EE345AD070590C /* [CP] Check Pods Manifest.lock */,
 				3A528F32217F1B2900394AF4 /* Sources */,
 				3A528F33217F1B2900394AF4 /* Frameworks */,
 				3A528F34217F1B2900394AF4 /* Resources */,
-				2D1CC46056716DB7FBD891DC /* [CP] Embed Pods Frameworks */,
+				10F5A8C993890CF77CA0FAB0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -183,10 +191,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3A528F61217F1B2B00394AF4 /* Build configuration list for PBXNativeTarget "Time_TrackerTests" */;
 			buildPhases = (
-				95216C1EAEEA06ADB99FAB2D /* [CP] Check Pods Manifest.lock */,
+				1B821FD0B98920C7F849C9E5 /* [CP] Check Pods Manifest.lock */,
 				3A528F46217F1B2B00394AF4 /* Sources */,
 				3A528F47217F1B2B00394AF4 /* Frameworks */,
 				3A528F48217F1B2B00394AF4 /* Resources */,
+				91F4E3960FC3BD25C46F1BE7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -264,7 +273,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A528F44217F1B2B00394AF4 /* LaunchScreen.storyboard in Resources */,
+				3AD7B1832180626300AC1206 /* Launch Screen.storyboard in Resources */,
 				3A528F41217F1B2B00394AF4 /* Assets.xcassets in Resources */,
 				3A528F3F217F1B2A00394AF4 /* Main.storyboard in Resources */,
 			);
@@ -287,33 +296,27 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2D1CC46056716DB7FBD891DC /* [CP] Embed Pods Frameworks */ = {
+		10F5A8C993890CF77CA0FAB0 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Time_Tracker/Pods-Time_Tracker-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Cartography/Cartography.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
-				"${BUILT_PRODUCTS_DIR}/RealmLoginKit/RealmLoginKit.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/TORoundedTableView/TORoundedTableView.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cartography.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmLoginKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TORoundedTableView.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Time_Tracker/Pods-Time_Tracker-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		95216C1EAEEA06ADB99FAB2D /* [CP] Check Pods Manifest.lock */ = {
+		1B821FD0B98920C7F849C9E5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -324,14 +327,34 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Time_TrackerTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Time_Tracker-Time_TrackerTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B75172E26FAA5D8C8D299AE8 /* [CP] Check Pods Manifest.lock */ = {
+		91F4E3960FC3BD25C46F1BE7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Time_Tracker-Time_TrackerTests/Pods-Time_Tracker-Time_TrackerTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Time_Tracker-Time_TrackerTests/Pods-Time_Tracker-Time_TrackerTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2A0B8FEE2EE345AD070590C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -399,14 +422,6 @@
 				3A528F3E217F1B2A00394AF4 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		3A528F42217F1B2B00394AF4 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3A528F43217F1B2B00394AF4 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -528,12 +543,14 @@
 		};
 		3A528F5F217F1B2B00394AF4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0D17C4B2D3AC3E7DCCF0B6C1 /* Pods-Time_Tracker.debug.xcconfig */;
+			baseConfigurationReference = 30A85A249C8F910233E68AF8 /* Pods-Time_Tracker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MU57FQ42EU;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Time_Tracker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -547,12 +564,13 @@
 		};
 		3A528F60217F1B2B00394AF4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4D091B996E5B3722F06B8C48 /* Pods-Time_Tracker.release.xcconfig */;
+			baseConfigurationReference = 9124FC719672F95AD8D7C7B7 /* Pods-Time_Tracker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MU57FQ42EU;
 				INFOPLIST_FILE = Time_Tracker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -566,7 +584,7 @@
 		};
 		3A528F62217F1B2B00394AF4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1541E5AA0804AF43E6B032DC /* Pods-Time_TrackerTests.debug.xcconfig */;
+			baseConfigurationReference = 073FE85FCF98A9C3D0E49D33 /* Pods-Time_Tracker-Time_TrackerTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -588,7 +606,7 @@
 		};
 		3A528F63217F1B2B00394AF4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 092D9A0086818E004743FCEE /* Pods-Time_TrackerTests.release.xcconfig */;
+			baseConfigurationReference = 9569238DA7B355D04E7554E2 /* Pods-Time_Tracker-Time_TrackerTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
