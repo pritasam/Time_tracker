@@ -1,16 +1,11 @@
-source 'https://github.com/CocoaPods/Specs.git'
 use_frameworks!
 
 
-
 target 'Time_Tracker' do
-        platform :ios, '10.1'
         pod 'RealmSwift'
-        pod 'Cartography', '~> 2.0.0'
-        pod 'SwiftLint', '= 0.23.1'
-        pod 'RealmLoginKit', :podspec=>'https://raw.githubusercontent.com/realm-demos/realm-loginkit/master/RealmLoginKit%20Apple/RealmLoginKit.podspec', :branch => 'to/swift-4'
+
         target 'Time_TrackerTests' do
-            platform :ios, '9.0'
+			inherit! :search_paths
         end
 end
 
@@ -23,10 +18,7 @@ post_install do |installer|
             config.build_settings['PROVISIONING_PROFILE_SPECIFIER'] = ''
 
             # Swift4 pods
-            next unless target.name.start_with?("RealmSwift") ||
-                target.name.start_with?("RealmLoginKit") ||
-                target.name.start_with?("Cartography")
-
+            next unless target.name.start_with?("RealmSwift") 
             config.build_settings['SWIFT_VERSION'] = '4.0'
 
         end
