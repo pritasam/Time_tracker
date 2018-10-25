@@ -22,8 +22,15 @@ class ProjectListView: UIViewController {
 	
 	@IBAction func addProject() {
 		textFieldAlertView("Add Project") { projectname,perhourCharge  in
-			let hourlyRate = Int(perhourCharge)
-			Project.add(projectname: projectname, perhourRate: hourlyRate!)
+			guard let hourlyRate = Int(perhourCharge ) else {
+				showAlertView("Please enter correct details", text: "Per hour rate should be more than 0 and Integer")
+				return
+			}
+			if Project.projectExist(name: projectname)   {
+				showAlertView("Please enter correct details", text: "Project already exists")
+				return
+			}
+			Project.add(projectname: projectname, perhourRate: hourlyRate)
 			self.presenter?.viewDidLoad()
 		}
 	}
@@ -34,12 +41,16 @@ extension ProjectListView: ProjectListViewProtocol {
     
     func showProjects(with projects: [Project]) {
         ProjectList = projects
+		if ProjectList.count <= 0 {
+			tableView.isHidden = true
+		} else {
+			tableView.isHidden = false
+		}
         tableView.reloadData()
     }
     
     func showError() {
     }
-    
 }
 
 extension ProjectListView: UITableViewDataSource, UITableViewDelegate {

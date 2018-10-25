@@ -16,13 +16,12 @@ func textFieldAlertView(_ title: String, isSecure: Bool = false, text: String? =
 		field.isSecureTextEntry = isSecure
 		field.text = text
 		field.placeholder = "Enter project name"
-
 	})
 	
 	alert.addTextField(configurationHandler: { field in
 		field.isSecureTextEntry = isSecure
 		field.text = text
-		field.placeholder = "Enter per hour rate"
+		field.placeholder = "Enter per hour rate in $"
 	})
 	
 	alert.addAction(UIAlertAction(title: "OK", style: .default) { _ in
@@ -34,9 +33,20 @@ func textFieldAlertView(_ title: String, isSecure: Bool = false, text: String? =
 			textFieldAlertView(title, callback: callback)
 			return
 		}
-
 		callback(projectName,perhourRate)
 	})
 	let root = UIApplication.shared.keyWindow?.rootViewController
 	root?.present(alert, animated: true, completion: nil)
 }
+
+
+func showAlertView(_ title: String, text: String? = nil) {
+	let alert = UIAlertController(title: title, message: text, preferredStyle: .alert) 
+	alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { _ in 
+	}))	
+	let root = UIApplication.shared.keyWindow?.rootViewController
+	root?.present(alert, animated: true, completion: nil)
+}
+
+
+

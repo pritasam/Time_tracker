@@ -45,6 +45,10 @@ extension Project {
 
 	}
 	
+	static func projectExist (name: String,in realm: Realm = try! Realm()) -> Bool {
+		return realm.object(ofType: Project.self, forPrimaryKey: name) != nil
+	}
+	
 	static func getallProjects(in realm: Realm = try! Realm()) -> [Project] {			
 		let results  =		 realm.objects(Project.self)
 			.sorted(byKeyPath: Project.Property.created.rawValue)
