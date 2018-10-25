@@ -33,20 +33,11 @@
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProjectCell" rowHeight="70" id="Utz-FW-4tt" userLabel="ProjectCell" customClass="ProjectTableViewCell" customModule="Time_Tracker" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="70"/>
-                                        <autoresizingMask key="autoresizingMask"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Utz-FW-4tt" id="jLd-aO-6yR">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="69.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Visma" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2lc-wY-toY" userLabel="CompanyName">
-                                                    <rect key="frame" x="26" y="35" width="47" height="30"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="x9R-GB-rBg"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Working " textAlignment="natural" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ic5-N4-9XH" userLabel="Project Name Label">
                                                     <rect key="frame" x="26" y="0.0" width="68" height="30"/>
                                                     <constraints>
@@ -56,9 +47,19 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100$" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2lc-wY-toY" userLabel="hoursLabel">
+                                                    <rect key="frame" x="26" y="35" width="39" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="x9R-GB-rBg"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ic5-N4-9XH" secondAttribute="trailing" id="7xT-XN-t8J"/>
+                                                <constraint firstAttribute="bottom" secondItem="2lc-wY-toY" secondAttribute="bottom" constant="4.5" id="DYs-uy-rYl"/>
                                                 <constraint firstItem="2lc-wY-toY" firstAttribute="top" secondItem="ic5-N4-9XH" secondAttribute="bottom" constant="5" id="LUJ-uJ-1rd"/>
                                                 <constraint firstItem="ic5-N4-9XH" firstAttribute="leading" secondItem="jLd-aO-6yR" secondAttribute="leading" constant="26" id="Yfl-8C-p4I"/>
                                                 <constraint firstItem="ic5-N4-9XH" firstAttribute="top" secondItem="jLd-aO-6yR" secondAttribute="top" id="qhg-Uk-Xu5"/>
@@ -67,7 +68,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="companyNameLabel" destination="2lc-wY-toY" id="KJP-60-6O0"/>
+                                            <outlet property="hoursLabel" destination="2lc-wY-toY" id="P3i-24-HaA"/>
                                             <outlet property="projectNameLabel" destination="ic5-N4-9XH" id="JGD-ue-lzg"/>
                                         </connections>
                                     </tableViewCell>
@@ -91,7 +92,11 @@
                         <viewLayoutGuide key="safeArea" id="yFx-gG-qN6"/>
                     </view>
                     <navigationItem key="navigationItem" title="Projects" id="HaS-An-b7e">
-                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="add" id="vFE-vG-Sqk"/>
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="add" id="vFE-vG-Sqk">
+                            <connections>
+                                <action selector="addProject" destination="LAB-C6-yT9" id="D67-oQ-nnj"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="DTA-GQ-Led" id="aG9-k9-3Iy"/>

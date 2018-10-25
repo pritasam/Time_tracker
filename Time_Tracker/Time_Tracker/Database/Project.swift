@@ -12,11 +12,11 @@ import RealmSwift
 @objcMembers  class Project: Object {
 
 	 enum Property: String {
-		case name, companyName, created,taskHour
+		case name,perhourRate, created,taskHour
 	 }
 	
 	 dynamic var name = ""
-	 dynamic var companyName = ""
+	 dynamic var perhourRate = 0
 	 dynamic var created = NSDate()
 	 dynamic var taskHour =  List<TaskHour>()
 
@@ -24,22 +24,41 @@ import RealmSwift
 		return Project.Property.name.rawValue
 	 }
 
-	 convenience init(_ text: String) {
+	convenience init(projectname: String?, perhourRate: Int?) {
 		self.init()
-		self.name = text
-	 }
+		self.name = projectname!
+		self.perhourRate = perhourRate!
+	}
+	
+	/* convenience init(_ projectname: String, perhourRate: Int) {
+		self.init()
+		self.name = projectname
+		self.name = projectname
+	 }*/
 }
 
 extension Project {
 	static func all(in realm: Realm = try! Realm()) -> Results<Project> {
 		return realm.objects(Project.self)
 			.sorted(byKeyPath: Project.Property.created.rawValue)
+		
+
 	}
 	
+	static func getallProjects(in realm: Realm = try! Realm()) -> [Project] {			
+		let results  =		 realm.objects(Project.self)
+			.sorted(byKeyPath: Project.Property.created.rawValue)
+		let array = Array(results) 
+		return array;
+	}
+	
+	// la fin
+
+	
 	@discardableResult
-	static func add(text: String, in realm: Realm = try! Realm())
+	static func add(projectname: String, perhourRate: Int,in realm: Realm = try! Realm())
 		-> Project {
-			let item = Project(text)
+			let item = Project(projectname:projectname, perhourRate: perhourRate);
 			try! realm.write {
 				realm.add(item)
 			}

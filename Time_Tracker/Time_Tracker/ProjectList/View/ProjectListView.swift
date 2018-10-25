@@ -19,6 +19,14 @@ class ProjectListView: UIViewController {
         presenter?.viewDidLoad()
         tableView.tableFooterView = UIView()
     }
+	
+	@IBAction func addProject() {
+		textFieldAlertView("Add Project") { projectname,perhourCharge  in
+			let hourlyRate = Int(perhourCharge)
+			Project.add(projectname: projectname, perhourRate: hourlyRate!)
+			self.presenter?.viewDidLoad()
+		}
+	}
     
 }
 

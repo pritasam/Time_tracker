@@ -8,13 +8,9 @@
 
 class ProjectListInteractor: ProjectListInteractorInputProtocol {
     weak var presenter: ProjectListInteractorOutputProtocol?
-
     func retrieveProjectList() {
-        do {
-			presenter?.didRetrieveProjects([])
-        } catch {
-			presenter?.didRetrieveProjects([])
-        }
+		let projects = Project.getallProjects();
+		presenter?.didRetrieveProjects(projects);
     }
 }
 

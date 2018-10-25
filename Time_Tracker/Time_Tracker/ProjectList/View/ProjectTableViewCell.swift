@@ -10,13 +10,11 @@ import UIKit
 
 class ProjectTableViewCell: UITableViewCell {
 
-    
     @IBOutlet weak var projectNameLabel: UILabel!
-	@IBOutlet weak var companyNameLabel: UILabel!
+	@IBOutlet weak var hoursLabel: UILabel!
 
     func set(forProject project: Project) {
         self.selectionStyle = .none
-        projectNameLabel?.text = project.name
-		companyNameLabel?.text = project.companyName
+		projectNameLabel?.text = "Project Name:   " + project.name
     }
 }
