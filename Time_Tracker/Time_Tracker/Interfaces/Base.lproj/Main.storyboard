@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tX8-Ci-Osb">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Projects-->
+        <scene sceneID="Etz-ZT-PEe">
+            <objects>
+                <viewController id="LAB-C6-yT9" customClass="ProjectListView" customModule="Time_Tracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y9f-ah-jCH"/>
+                        <viewControllerLayoutGuide type="bottom" id="AVF-1v-Oeb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="x16-uZ-l7N">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Projects Present" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1XD-wd-bt6" userLabel="No Data Present">
+                                <rect key="frame" x="0.0" y="355" width="375" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="150" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DTA-GQ-Led">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProjectCell" rowHeight="70" id="Utz-FW-4tt" userLabel="ProjectCell" customClass="ProjectTableViewCell" customModule="Time_Tracker" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="70"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Utz-FW-4tt" id="jLd-aO-6yR">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="69.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Working " textAlignment="natural" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ic5-N4-9XH" userLabel="Project Name Label">
+                                                    <rect key="frame" x="26" y="0.0" width="68" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="qZQ-Hi-2r5"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100$" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2lc-wY-toY" userLabel="hoursLabel">
+                                                    <rect key="frame" x="26" y="35" width="39" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="x9R-GB-rBg"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ic5-N4-9XH" secondAttribute="trailing" id="7xT-XN-t8J"/>
+                                                <constraint firstAttribute="bottom" secondItem="2lc-wY-toY" secondAttribute="bottom" constant="4.5" id="DYs-uy-rYl"/>
+                                                <constraint firstItem="2lc-wY-toY" firstAttribute="top" secondItem="ic5-N4-9XH" secondAttribute="bottom" constant="5" id="LUJ-uJ-1rd"/>
+                                                <constraint firstItem="ic5-N4-9XH" firstAttribute="leading" secondItem="jLd-aO-6yR" secondAttribute="leading" constant="26" id="Yfl-8C-p4I"/>
+                                                <constraint firstItem="ic5-N4-9XH" firstAttribute="top" secondItem="jLd-aO-6yR" secondAttribute="top" id="qhg-Uk-Xu5"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="2lc-wY-toY" secondAttribute="trailing" id="xHb-bt-kRm"/>
+                                                <constraint firstItem="2lc-wY-toY" firstAttribute="leading" secondItem="jLd-aO-6yR" secondAttribute="leading" constant="26" id="xUa-Hy-Pt4"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="hoursLabel" destination="2lc-wY-toY" id="P3i-24-HaA"/>
+                                            <outlet property="projectNameLabel" destination="ic5-N4-9XH" id="JGD-ue-lzg"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="LAB-C6-yT9" id="N6a-iY-ecu"/>
+                                    <outlet property="delegate" destination="LAB-C6-yT9" id="rnC-88-bar"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="DTA-GQ-Led" firstAttribute="top" secondItem="x16-uZ-l7N" secondAttribute="top" id="CXm-hu-zzW"/>
+                            <constraint firstAttribute="trailing" secondItem="DTA-GQ-Led" secondAttribute="trailing" id="F1b-EU-UPb"/>
+                            <constraint firstItem="1XD-wd-bt6" firstAttribute="centerY" secondItem="yFx-gG-qN6" secondAttribute="centerY" id="GTV-be-22n"/>
+                            <constraint firstItem="yFx-gG-qN6" firstAttribute="trailing" secondItem="1XD-wd-bt6" secondAttribute="trailing" id="KOL-9c-doa"/>
+                            <constraint firstItem="AVF-1v-Oeb" firstAttribute="top" secondItem="DTA-GQ-Led" secondAttribute="bottom" id="OeS-d4-DRW"/>
+                            <constraint firstItem="1XD-wd-bt6" firstAttribute="centerX" secondItem="yFx-gG-qN6" secondAttribute="centerX" id="bJe-2r-1pb"/>
+                            <constraint firstItem="DTA-GQ-Led" firstAttribute="leading" secondItem="x16-uZ-l7N" secondAttribute="leading" id="nnk-Sv-UfH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yFx-gG-qN6"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Projects" id="HaS-An-b7e">
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="add" id="vFE-vG-Sqk">
+                            <connections>
+                                <action selector="addProject" destination="LAB-C6-yT9" id="D67-oQ-nnj"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="DTA-GQ-Led" id="aG9-k9-3Iy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SO9-fZ-EfS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="482.39999999999998" y="45.42728635682159"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="mha-vo-hr4">
+            <objects>
+                <navigationController storyboardIdentifier="ProjectsNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="tX8-Ci-Osb" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="LRi-cn-EME">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="LAB-C6-yT9" kind="relationship" relationship="rootViewController" id="60W-fq-uFg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="43n-8u-lZR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-455.19999999999999" y="46.326836581709152"/>
+        </scene>
+    </scenes>
+</document>
