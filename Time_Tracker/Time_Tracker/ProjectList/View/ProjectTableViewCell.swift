@@ -16,5 +16,6 @@ class ProjectTableViewCell: UITableViewCell {
     func set(forProject project: Project) {
         self.selectionStyle = .none
 		projectNameLabel?.text = "Project Name:   " + project.name
-    }
+		hoursLabel?.text = "Hourly Rate:   " + String(project.perhourRate) + " $"
+	}
 }
