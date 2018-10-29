@@ -30,8 +30,11 @@ class ProjectListWireFrame: ProjectListWireFrameProtocol {
         return UIStoryboard(name: "Main", bundle: Bundle.main)
     }
     
-	
 	func presentProjectDetailScreen(from view: ProjectListViewProtocol, forProject project: Project) {
+		let projectDetailViewController = TaskListWireFrame.createTaskListModule(project)
+		if let sourceView = view as? UIViewController {
+			sourceView.navigationController?.pushViewController(projectDetailViewController, animated: true)
+		}
 	}
 
 }

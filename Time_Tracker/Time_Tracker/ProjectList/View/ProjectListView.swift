@@ -67,6 +67,9 @@ extension ProjectListView: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+		var project =  ProjectList[indexPath.row]
+		presenter?.showProjectDetail(forProject: project);
+
     }
     
 }

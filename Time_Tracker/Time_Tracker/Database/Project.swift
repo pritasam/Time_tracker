@@ -18,7 +18,7 @@ import RealmSwift
 	 dynamic var name = ""
 	 dynamic var perhourRate = 0
 	 dynamic var created = NSDate()
-	 dynamic var taskHour =  List<TaskHour>()
+	 dynamic var taskHour =  List<Task>()
 
 	 override static func primaryKey() -> String? {
 		return Project.Property.name.rawValue
@@ -42,7 +42,6 @@ extension Project {
 		return realm.objects(Project.self)
 			.sorted(byKeyPath: Project.Property.created.rawValue)
 		
-
 	}
 	
 	static func projectExist (name: String,in realm: Realm = try! Realm()) -> Bool {
@@ -55,9 +54,6 @@ extension Project {
 		let array = Array(results) 
 		return array;
 	}
-	
-	// la fin
-
 	
 	@discardableResult
 	static func add(projectname: String, perhourRate: Int,in realm: Realm = try! Realm())
@@ -81,10 +77,53 @@ extension Project {
 import Foundation
 import RealmSwift
 
-@objcMembers class TaskHour : Object {
+@objcMembers class Task : Object {
+	 enum Property: String {
+		case name,hours, created
+	 }
 	 dynamic var name = ""
 	 dynamic var hours = 0	
 	 dynamic var created = NSDate()
+	
+	convenience init(taskname: String?, hoursSpent: Int?) {
+		self.init()
+		self.name = taskname!
+		self.hours = hoursSpent!
+	}
+	
+	
 }
 
+
+extension Task {
+	static func all(in realm: Realm = try! Realm()) -> Results<Project> {
+		return realm.objects(Project.self)
+			.sorted(byKeyPath: Project.Property.created.rawValue)
+		
+	}
+	
+	static func getallTasks(project:Project,in realm: Realm = try! Realm()) -> [Task] {		
+		let results  = project.taskHour;
+		let array = Array(results) 
+		return array;
+	}
+	
+	@discardableResult
+	static func add(taskname: String, hoursSpent: Int,project: Project,in realm: Realm = try! Realm())
+		-> Task {
+			let item = Task(taskname:taskname, hoursSpent: hoursSpent);
+			try! realm.write {
+				realm.add(item)
+				project.taskHour.append(item)
+			}
+			return item
+	}
+	
+	func delete() {
+		guard let realm = realm else { return }
+		try! realm.write {
+			realm.delete(self)
+		}
+	}
+}
 
