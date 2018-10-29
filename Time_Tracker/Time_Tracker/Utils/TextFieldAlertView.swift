@@ -9,31 +9,29 @@
 import Foundation
 import UIKit
 
-func textFieldAlertView(_ title: String, isSecure: Bool = false, text: String? = nil, callback: @escaping (String,String) -> Void) {
+func textFieldAlertView(_ title: String, firstPlaceHoler: String? = "Enter project name",secondPlaceHoler: String? = "Enter per hour rate in $", text: String? = nil,callback: @escaping (String,String) -> Void) {
 	let alert = UIAlertController(title: title, message: nil, preferredStyle: .alert)
 	
 	alert.addTextField(configurationHandler: { field in
-		field.isSecureTextEntry = isSecure
 		field.text = text
-		field.placeholder = "Enter project name"
+		field.placeholder = firstPlaceHoler
 	})
 	
 	alert.addTextField(configurationHandler: { field in
-		field.isSecureTextEntry = isSecure
 		field.text = text
-		field.placeholder = "Enter per hour rate in $"
+		field.placeholder =  secondPlaceHoler 
 	})
-	
 	alert.addAction(UIAlertAction(title: "OK", style: .default) { _ in
-		guard let projectName = alert.textFields?.first?.text, !projectName.isEmpty else {
-			textFieldAlertView(title, callback: callback)
+		guard let firstFieldName = alert.textFields?.first?.text, !firstFieldName.isEmpty else {
+			//textFieldAlertView(title, callback: callback)
+			showAlertView("Please enter the valid Name");
 			return
 		}
-		guard let perhourRate = alert.textFields?.last?.text, !perhourRate.isEmpty else {
-			textFieldAlertView(title, callback: callback)
+		guard let secondFieldName = alert.textFields?.last?.text, !secondFieldName.isEmpty else {
+			showAlertView("Please enter the valid Hours");
 			return
 		}
-		callback(projectName,perhourRate)
+		callback(firstFieldName,secondFieldName)
 	})
 	let root = UIApplication.shared.keyWindow?.rootViewController
 	root?.present(alert, animated: true, completion: nil)
