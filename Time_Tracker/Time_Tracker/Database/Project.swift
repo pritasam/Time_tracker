@@ -96,11 +96,6 @@ import RealmSwift
 
 
 extension Task {
-	static func all(in realm: Realm = try! Realm()) -> Results<Project> {
-		return realm.objects(Project.self)
-			.sorted(byKeyPath: Project.Property.created.rawValue)
-		
-	}
 	
 	static func getallTasks(project:Project,in realm: Realm = try! Realm()) -> [Task] {		
 		let results  = project.taskHour;

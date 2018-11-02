@@ -40,7 +40,14 @@ protocol ProjectListInteractorOutputProtocol: class {
 
 protocol ProjectListInteractorInputProtocol: class {
     var presenter: ProjectListInteractorOutputProtocol? { get set }
+	var dataManager: ProjectDataManageProtocol? { get set }
     // PRESENTER -> INTERACTOR
     func retrieveProjectList()
+}
+
+protocol ProjectDataManageProtocol: class {
+	// Interactor -> Datamanager
+	var interactor: ProjectListInteractorInputProtocol? { get set }
+	func getProjectList() -> [Project]
 }
 
