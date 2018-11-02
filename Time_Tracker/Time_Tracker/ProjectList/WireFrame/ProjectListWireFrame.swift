@@ -16,11 +16,16 @@ class ProjectListWireFrame: ProjectListWireFrameProtocol {
             let presenter: ProjectListPresenterProtocol & ProjectListInteractorOutputProtocol = ProjectListPresenter()
             let interactor: ProjectListInteractorInputProtocol  = ProjectListInteractor()
             let wireFrame: ProjectListWireFrameProtocol = ProjectListWireFrame()
+			let dataManager: ProjectDataManageProtocol = DataManager()
+			
             view.presenter = presenter
             presenter.view = view
             presenter.wireFrame = wireFrame
             presenter.interactor = interactor
             interactor.presenter = presenter
+			interactor.dataManager = dataManager
+			dataManager.interactor = interactor;
+			
             return navController
         }
         return UIViewController()
